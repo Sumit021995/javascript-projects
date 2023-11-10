@@ -13,4 +13,6 @@
  })
 
  // Some event basis
- // like 
+ // like movement of cursor is an event
+ // click on anything is also an event
+ // Tab closing is also an event
