@@ -20,12 +20,10 @@ length: 4
  buttons.forEach((button)=>{
     console.log(button);
 
-    button.addEventListener('click',(event)=>{
-        console.log(event);
-        console.log(event.target);
+    button.addEventListener('click', function(e){
+        console.log(e);
+        console.log(e.target);
         
-        
-
     })
  });
 
