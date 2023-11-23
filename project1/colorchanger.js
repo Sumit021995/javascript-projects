@@ -23,18 +23,36 @@ length: 4
     button.addEventListener('click', function(e){
         console.log(e);
         console.log(e.target);
-        if (e.target.id === 'gray') {
-          body.style.backgroundColor = e.target.id;
+
+        switch (e.target.id) {
+          case "gray":
+            body.style.backgroundColor = 'gray'
+            break;
+          case "white":
+            body.style.backgroundColor = 'white'
+            break;
+          case "yellow":
+            body.style.backgroundColor = 'yellow'
+            break;
+          case "blue":
+            body.style.backgroundColor = 'blue'
+            break;
+        
+          default:
+            break;
         }
-        if (e.target.id === 'blue') {
-          body.style.backgroundColor = e.target.id;
-        }
-        if (e.target.id === 'white') {
-          body.style.backgroundColor = e.target.id;
-        }
-        if (e.target.id === 'yellow') {
-          body.style.backgroundColor = e.target.id;
-        }
+        // if (e.target.id === 'gray') {
+        //   body.style.backgroundColor = e.target.id;
+        // }
+        // if (e.target.id === 'blue') {
+        //   body.style.backgroundColor = e.target.id;
+        // }
+        // if (e.target.id === 'white') {
+        //   body.style.backgroundColor = e.target.id;
+        // }
+        // if (e.target.id === 'yellow') {
+        //   body.style.backgroundColor = e.target.id;
+        // }
         
     })
  });
