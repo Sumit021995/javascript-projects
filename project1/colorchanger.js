@@ -41,6 +41,7 @@ length: 4
           default:
             break;
         }
+        
         // if (e.target.id === 'gray') {
         //   body.style.backgroundColor = e.target.id;
         // }
