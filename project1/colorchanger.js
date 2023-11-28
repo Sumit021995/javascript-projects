@@ -20,11 +20,11 @@ length: 4
  buttons.forEach((button)=>{
     console.log(button);
 
-    button.addEventListener('click', function(e){
-        console.log(e);
-        console.log(e.target);
+    button.addEventListener('click', function(element){
+        console.log(element);
+        console.log(element.target);
 
-        switch (e.target.id) {
+        switch (element.target.id) {
           case "gray":
             body.style.backgroundColor = 'gray'
             break;
