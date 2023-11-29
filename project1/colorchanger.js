@@ -29,6 +29,7 @@ length: 4
         // when we click on any button with color given then console.log(element) shows
         // PointerEvent {isTrusted: true, pointerId: 3, width: 1, height: 1, pressure: 0, …}
         console.log(element.target);
+        // in PointerEvent {} .. there is a target 
         // <span class="button" id="gray"></span>
 
         switch (element.target.id) {
