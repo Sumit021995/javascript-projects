@@ -47,6 +47,12 @@ length: 4
           case "blue":
             body.style.backgroundColor = 'blue'
             break;
+          case "orange":
+            body.style.backgroundColor = 'orange'
+            break;
+          case "purple":
+            body.style.backgroundColor = 'blue'
+            break;
         
           default:
             break;
