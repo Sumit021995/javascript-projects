@@ -30,6 +30,8 @@ length: 4
         // PointerEvent {isTrusted: true, pointerId: 3, width: 1, height: 1, pressure: 0, …}
         console.log(element.target);
         // in PointerEvent {} .. there is a target 
+        // in 'target' there is an 'id' which relate to id in index.html file
+        // and that id relate to id of different colors where 'addEventListner' is working 
         // <span class="button" id="gray"></span>
 
         switch (element.target.id) {
