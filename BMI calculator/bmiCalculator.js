@@ -1,9 +1,12 @@
 let form = document.querySelector('form');
 
 form.eventListener('submit', (s)=>{
-    let height = document.getElementById('height');
-    let weight = document.getElementById('weight');
-    let result = document.getElementById('result'); 
+    s.preventDefault();
+    let height = parseInt(document.querySelector('#height'));
+    let weight = parseInt(document.querySelector('#weight'));
+    let result = parseInt(document.querySelector('#result')); 
 
-    
+    result = (weight/((height/100)^2));
+
+
 })
