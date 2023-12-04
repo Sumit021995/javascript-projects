@@ -1,12 +1,12 @@
-let form = document.querySelector('form');
+const form = document.querySelector('form'); 
 
-form.eventListener('submit', (s)=>{
+form.addEventListener('submit', (s)=>{
     s.preventDefault();
-    let height = parseInt(document.querySelector('#height').value);
-    let weight = parseInt(document.querySelector('#weight').value);
-    let result = parseInt(document.querySelector('#result').value); 
+    const height = parseInt(document.querySelector('#height').value);
+    const weight = parseInt(document.querySelector('#weight').value);
+    const result = parseInt(document.querySelector('#result')); 
 
-    result = (weight/((height/100)^2));
+    result = (weight/((height/100)^2)); 
 
 
-})
+}) 
