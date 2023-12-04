@@ -13,7 +13,7 @@ form.addEventListener('submit', function (s) {
   } else {
   height = parseInt(height);
   weight = parseInt(weight);
-    let bmi = (weight/((height*height)/10000)).toFixed(2)
+    let bmi = (weight/((height*height)/10000)).toFixed(2) 
     // show the result
     results.innerHTML = `<span>${bmi}</span>`
   }
