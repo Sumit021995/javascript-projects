@@ -1,9 +1,9 @@
 let clock = document.getElementById('clock');
-let date = new Date();
-date = date.toLocaleTimeString();
+// let date = new Date();
+// date = date.toLocaleTimeString();
 // console.log(date.toLocaleTimeString());
 // 2:52:59 pm it shows the current time which is changing 
-clock.innerHTML = `${date}`
+// clock.innerHTML = `${date}`
 
 // Here we use method of setInterval with 1000 i.e 1sec
 // proper syntex for setInterval
@@ -12,4 +12,5 @@ clock.innerHTML = `${date}`
 setInterval(function(){
     let date = new Date();
 date = date.toLocaleTimeString();
+clock.innerHTML = date
 },1000)
