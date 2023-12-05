@@ -13,12 +13,18 @@ form.addEventListener('submit', function (s) {
   } else {
   height = parseInt(height);
   weight = parseInt(weight);
-    let bmi = (weight/((height*height)/10000)).toFixed(2) 
+    let bmi = parseFloat((weight/((height*height)/10000)).toFixed(2)); 
     // show the result
     // results.innerHTML = `<span>${bmi}</span>`
     // assignment
-    if(bmi > 18.6){
-        results.innerHTML = `<span>${bmi}</span>` <br> 'You are Under Weight'
+    if(bmi > 0 && bmi <= 18.6){
+        results.innerHTML = `<span>${bmi}</span><br>" You are Under Weight"`
+        
+    }else if (bmi > 18.6 && bmi <= 24.9){
+        results.innerHTML = `<span> ${bmi}</span><br>" You are Fit" `
+        
+    }else{
+        results.innerHTML = `<span>${bmi}</span><br>" You are Over Weight"`
 
     }
   }
