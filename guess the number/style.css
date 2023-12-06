@@ -82,7 +82,7 @@ html {
   
   h1 {
     padding-top: 5%;
-    color: orange
+    color: orange;
     text-align: center;
   }
   
@@ -91,3 +91,6 @@ html {
     text-align: center;
   }
   
+  h2{
+    color: white;
+  }
