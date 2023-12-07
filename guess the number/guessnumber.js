@@ -8,6 +8,18 @@ form.addEventListener('submit',function(){
     
     //this is a button as you can seen on live server from index.html
     // let guessSubmit = document.querySelector('.guessSubmit');
+    if(guessField === randomNumber){
+        let lowOrHi = document.querySelector('.lowOrHi');
+        lowOrHi.innerHTML = 'Your guess is correct';
+        
+    } else if(guessField > randomNumber){
+        lowOrHi.innerHTML = 'Your guess is greater than Random Number';
+
+    }
+     else if(guessField < randomNumber){
+        lowOrHi.innerHTML = 'Your guess is less than Random Number';
+
+    }
 
 
 
