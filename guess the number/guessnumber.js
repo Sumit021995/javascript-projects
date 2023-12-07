@@ -1,4 +1,5 @@
 let form = document.querySelector('.form');
+let submit = document.getElementById('subt');
 
 form.addEventListener('submit',function(){
     let guessField = parseInt(document.getElementById('guessField').value);
