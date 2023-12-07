@@ -17,7 +17,7 @@ form.addEventListener('submit',function(){
 
     }
      else if(guessField < randomNumber){
-        lowOrHi.innerHTML = 'Your guess is less than Random Number';
+        lowOrHi.innerHTML = 'Your guess is less  than Random Number';
 
     }
 
