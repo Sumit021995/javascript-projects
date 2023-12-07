@@ -1,7 +1,16 @@
 let form = document.querySelector('.form');
 let submit = document.getElementById('subt');
-let StartOver = document.querySelector('.resultParas');
+// let StartOver = document.querySelector('.resultParas');
 let p = document.createElement('p');
+
+// we need to show an array og gussed numbers
+let prevGuess = [];
+// let number of guesses
+let numGuess = 1;
+// if our game ends or say if our 10 guesses ends then we need to restart the game of gussing so we need a start over
+let StartOver = document.querySelector('.resultParas');
+// to start a new game we also need
+
 
 form.addEventListener('submit',function(){
     let userInput = parseInt(document.getElementById('guessField').value);
