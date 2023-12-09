@@ -15,16 +15,16 @@ let StartOver = document.querySelector('.resultParas');
 // to start a new game we also need
 let playGame = true;
 
-function validateGuess(){
- //   
+function validateGuess(guess){
+ // to check the guess vallue is valid or not  
 }
-function checkGuess(){
+function checkGuess(guess){
 //
 }
-function displayGuess(){
+function displayGuess(guess){
 //
 }
-function displayMessage(){
+function displayMessage(message){
 //
 }
 function startNewGame(){
