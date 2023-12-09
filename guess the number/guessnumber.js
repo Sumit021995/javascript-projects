@@ -11,6 +11,25 @@ let StartOver = document.querySelector('.resultParas');
 // to start a new game we also need
 let playGame = true;
 
+function validateGuess(){
+    
+}
+function checkGuess(){
+
+}
+function displayGuess(){
+
+}
+function displayMessage(){
+
+}
+function startNewGame(){
+
+}
+function endGame(){
+
+}
+
 
 
 form.addEventListener('submit',function(){
@@ -33,6 +52,7 @@ form.addEventListener('submit',function(){
         lowOrHi.innerHTML = 'Your guess is less  than Random Number';
 
     }
+
 
 
 
