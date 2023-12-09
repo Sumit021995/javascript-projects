@@ -15,6 +15,15 @@ let StartOver = document.querySelector('.resultParas');
 // to start a new game we also need
 let playGame = true;
 
+// first check if available to play game
+if(playGame){
+    submit.addEventListener('click',function (e){
+        e.preventDefault();
+        let guess = userInput;
+        validateGuess(guess)
+    })
+}
+
 function validateGuess(guess){
  // to check the guess vallue is valid or not  
 }
