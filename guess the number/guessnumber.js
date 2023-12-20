@@ -26,7 +26,22 @@ if(playGame){
 }
 
 function validateGuess(guess){
- // to check the guess vallue is valid or not  
+// to check the guess value is valid or not  
+if(isNaN(guess)){
+    alert('Please enter a valid number');
+}else if(guess < 1){
+    alert('Please enter a number more than 1')
+}else if (guess > 100){
+    alert('Please enter a number less then 100')
+}else {
+    prevGuess.push(guess);
+    if(numGuess === 11){
+        displayGuess(guess);
+        displayMessage(`Game Over . Random number is ${randomNumber}`);
+        endGame();
+    }
+}
+
 }
 function checkGuess(guess){
 //
