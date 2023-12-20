@@ -1,7 +1,7 @@
 let form = document.querySelector('.form');
 let submit = document.getElementById('subt');
 let p = document.createElement('p');
-let userInput = parseInt(document.getElementById('guessField').value);
+let userInput = document.getElementById('guessField');
 let guesses = document.querySelector('.guesses');
 let lastResult = document.querySelector('.lastResult');
 let randomNumber = ((Math.random()*100) + 1);
@@ -19,9 +19,10 @@ let playGame = true;
 if(playGame){
     submit.addEventListener('click',function (e){
         e.preventDefault();
-        let guess = userInput;
-        validateGuess(guess)
-    })
+        let guess = parseInt(userInput.value);
+        console.log(guess);
+        validateGuess(guess);
+    });
 }
 
 function validateGuess(guess){
@@ -45,26 +46,26 @@ function endGame(){
 
 
 
-form.addEventListener('submit',function(){
+// form.addEventListener('submit',function(){
     
     
     //this is a button as you can seen on live server from index.html
     // let guessSubmit = document.querySelector('.guessSubmit');
-    if(userInput === randomNumber){
-        let lowOrHi = document.querySelector('.lowOrHi');
-        lowOrHi.innerHTML = 'Your guess is correct';
+//     if(userInput === randomNumber){
+//         let lowOrHi = document.querySelector('.lowOrHi');
+//         lowOrHi.innerHTML = 'Your guess is correct';
         
-    } else if(userInput > randomNumber){
-        lowOrHi.innerHTML = 'Your guess is greater than Random Number';
+//     } else if(userInput > randomNumber){
+//         lowOrHi.innerHTML = 'Your guess is greater than Random Number';
 
-    }
-     else if(userInput < randomNumber){
-        lowOrHi.innerHTML = 'Your guess is less  than Random Number';
+//     }
+//      else if(userInput < randomNumber){
+//         lowOrHi.innerHTML = 'Your guess is less  than Random Number';
 
-    }
+//     }
 
 
 
 
  
-});
+// });
