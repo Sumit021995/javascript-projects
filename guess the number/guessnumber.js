@@ -2,7 +2,7 @@ let form = document.querySelector('.form');
 let submit = document.getElementById('subt');
 let p = document.createElement('p');
 let userInput = document.getElementById('guessField');
-let guesses = document.querySelector('.guesses');
+let guessSlot = document.querySelector('.guesses');
 let lastResult = document.querySelector('.lastResult');
 let randomNumber = ((Math.random()*100) + 1);
 
@@ -39,15 +39,28 @@ if(isNaN(guess)){
         displayGuess(guess);
         displayMessage(`Game Over . Random number is ${randomNumber}`);
         endGame();
+    }else{
+        displayGuess(guess);
+        checkGuess(guess);
     }
 }
 
 }
 function checkGuess(guess){
-//
+if(guess === randomNumber){
+    displayMessage(`You guessed it right`);
+    endGame();
+}else if(guess < randomNumber){
+displayMessage(`Number is too low`)
 }
+else if(guess > randomNumber){
+displayMessage(`Number is too high`)
+}
+
+}
+
 function displayGuess(guess){
-//
+userInput.value = ``
 }
 function displayMessage(message){
 //
