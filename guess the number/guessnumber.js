@@ -63,19 +63,20 @@ displayMessage(`Number is too high`)
 function displayGuess(guess){
 userInput.value = ``;
 guessSlot.innerHTML += `${guess},  `;
+remaining.innerHTML = `${10-numGuess}`
 numGuess++;
-remaining.innerHTML = `${11-numGuess}`
 }
 
 function displayMessage(message){
 lowOrHi.innerHTML = `<h2>${message}</h2>`;
 }
 function endGame(){
+   
     userInput.value = ``;
     userInput.setAttribute('disabled','');
     p.classList.add('button')
     p.innerHTML = `<h2 id = 'newGame'>Start New Game</h2>`
-    StartOver.appendChild(p);
+    StartOver.appendChild(p);  
     playGame = false;
     startNewGame();
 }
@@ -87,8 +88,8 @@ e.preventDefault();
 randomNumber = parseInt((Math.random()*100) + 1);
 prevGuess=[];
 guessSlot.innerHTML = '';
-remaining.innerHTML = `${11-numGuess}`;
 numGuess = 1;
+remaining.innerHTML = `${11-numGuess}`;
 userInput.removeAttribute('disabled','');
 StartOver.removeChild(p);
 playGame=true;
