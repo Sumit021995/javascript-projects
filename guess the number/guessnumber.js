@@ -81,7 +81,18 @@ function endGame(){
 }
 
 function startNewGame(){
-const newGameButton = document.querySelector('#newGame')
+const newGameButton = document.querySelector('#newGame');
+newGameButton.addEventListener('click',function(e){
+e.preventDefault();
+randomNumber = parseInt((Math.random()*100) + 1);
+prevGuess=[];
+guessSlot.innerHTML = '';
+remaining.innerHTML = `${11-numGuess}`;
+numGuess = 1;
+userInput.removeAttribute('disabled','');
+StartOver.removeChild(p);
+playGame=true;
+});
 }
 
 
