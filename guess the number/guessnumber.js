@@ -4,7 +4,7 @@ let p = document.createElement('p');
 let userInput = document.getElementById('guessField');
 let guessSlot = document.querySelector('.guesses');
 let remaining = document.querySelector('.lastResult');
-let randomNumber = ((Math.random()*100) + 1);
+let randomNumber = parseInt((Math.random()*100) + 1);
 let lowOrHi = document.querySelector('.lowOrHi');
 
 // we need to show an array og gussed numbers
@@ -62,7 +62,7 @@ displayMessage(`Number is too high`)
 
 function displayGuess(guess){
 userInput.value = ``;
-guessSlot.innerHTML += `${guess}  `;
+guessSlot.innerHTML += `${guess},  `;
 numGuess++;
 remaining.innerHTML = `${11-numGuess}`
 }
@@ -70,13 +70,19 @@ remaining.innerHTML = `${11-numGuess}`
 function displayMessage(message){
 lowOrHi.innerHTML = `<h2>${message}</h2>`;
 }
-function startNewGame(){
-//
-}
 function endGame(){
-//
+    userInput.value = ``;
+    userInput.setAttribute('disabled','');
+    p.classList.add('button')
+    p.innerHTML = `<h2 id = 'newGame'>Start New Game</h2>`
+    StartOver.appendChild(p);
+    playGame = false;
+    startNewGame();
 }
 
+function startNewGame(){
+const newGameButton = document.querySelector('#newGame')
+}
 
 
 // form.addEventListener('submit',function(){
