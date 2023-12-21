@@ -79,6 +79,7 @@ function endGame(){
     StartOver.appendChild(p);  
     playGame = false;
     startNewGame();
+    remaining.innerHTML = '0';
 }
 
 function startNewGame(){
