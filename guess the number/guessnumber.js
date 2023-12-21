@@ -3,7 +3,7 @@ let submit = document.getElementById('subt');
 let p = document.createElement('p');
 let userInput = document.getElementById('guessField');
 let guessSlot = document.querySelector('.guesses');
-let lastResult = document.querySelector('.lastResult');
+let remaining = document.querySelector('.lastResult');
 let randomNumber = ((Math.random()*100) + 1);
 
 // we need to show an array og gussed numbers
@@ -60,7 +60,10 @@ displayMessage(`Number is too high`)
 }
 
 function displayGuess(guess){
-userInput.value = ``
+userInput.value = ``;
+guessSlot.innerHTML += `${guess}`;
+numGuess++;
+rema
 }
 function displayMessage(message){
 //
