@@ -63,10 +63,10 @@ function displayGuess(guess){
 userInput.value = ``;
 guessSlot.innerHTML += `${guess}`;
 numGuess++;
-rema
+remaining.innerHTML = `${11-numGuess}`
 }
 function displayMessage(message){
-//
+
 }
 function startNewGame(){
 //
