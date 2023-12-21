@@ -5,6 +5,7 @@ let userInput = document.getElementById('guessField');
 let guessSlot = document.querySelector('.guesses');
 let remaining = document.querySelector('.lastResult');
 let randomNumber = ((Math.random()*100) + 1);
+let lowOrHi = document.querySelector('.lowOrHi');
 
 // we need to show an array og gussed numbers
 let prevGuess = [];
@@ -65,8 +66,9 @@ guessSlot.innerHTML += `${guess}`;
 numGuess++;
 remaining.innerHTML = `${11-numGuess}`
 }
-function displayMessage(message){
 
+function displayMessage(message){
+lowOrHi.innerHTML = `<h2>${message}</h2>`;
 }
 function startNewGame(){
 //
