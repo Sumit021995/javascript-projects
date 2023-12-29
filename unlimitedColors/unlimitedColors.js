@@ -7,7 +7,17 @@ for(let i = 0; i<6; i++){
 }
 return color;
 // console.log(color);
+// (!changeColor) is different from (changeColor === null)
+
 };
+let changeColor ;
+document.getElementById('start').addEventListener('click',function(){
+ if(!changeColor){
+    changeColor = setInterval(function(){
+    document.body.style.backgroundColor = randomColor();
+ },1000)
+}
+});
 
 document.getElementById('stop').addEventListener('click', function(){
     clearInterval(changeColor);
@@ -15,12 +25,3 @@ document.getElementById('stop').addEventListener('click', function(){
     changeColor=null;
 });
 
-
-let changeColor ;
-document.getElementById('start').addEventListener('click',function(){
- if(changeColor === null){
-    changeColor = setInterval(function(){
-    document.body.style.backgroundColor = randomColor();
- },1000)
-}
-});
