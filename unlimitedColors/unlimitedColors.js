@@ -8,6 +8,8 @@ for(let i = 0; i<6; i++){
 return color;
 // console.log(color);
 }
-
-
 // console.log(randomColor());
+let changeColor ;
+document.getElementById('start').addEventListener('click',function(){
+ changeColor = setInterval(function(){},1000)
+})
