@@ -7,9 +7,20 @@ for(let i = 0; i<6; i++){
 }
 return color;
 // console.log(color);
-}
-// console.log(randomColor());
+};
+
+document.getElementById('stop').addEventListener('click', function(){
+    clearInterval(changeColor);
+    alert('changing color is stopped');
+    changeColor=null;
+});
+
+
 let changeColor ;
 document.getElementById('start').addEventListener('click',function(){
- changeColor = setInterval(function(){},1000)
-})
+ if(changeColor === null){
+    changeColor = setInterval(function(){
+    document.body.style.backgroundColor = randomColor();
+ },1000)
+}
+});
