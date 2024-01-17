@@ -4,5 +4,6 @@ let password = ()=>{
     let alfa = 'qwertyuiopasdfghjkzxcvbnm'
     let alfaC = 'QWERTYUIPASDFGHJKLZXCVBNM'
     let specialC='!@#$%^&*'
+    let number = '23456789'
 
 }
