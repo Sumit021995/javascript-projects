@@ -5,14 +5,17 @@ let password = ()=>{
     let alfaC = 'QWERTYUIPASDFGHJKLZXCVBNM'
     let specialC='!@#$%^&*'
     let number = '23456789'
-    let password =''
     let sN = parseInt(Math.random()*8);
     let nN = parseInt(Math.random()*8);
     let aN = parseInt(Math.random()*25);
     let aCN = parseInt(Math.random()*25);
+    let password =`${alfa[aN]+alfaC[aCN]+specialC[sN]+number[nN]}`
+    console.log(password);
     let n=parseInt(Math.random()*10 + 4);
     for(let i=0; i< n ; i++){
-        password+=
+        password+= 
     }
 
 }
+
+password()
