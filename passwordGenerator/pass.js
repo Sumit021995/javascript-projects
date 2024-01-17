@@ -6,5 +6,8 @@ let password = ()=>{
     let specialC='!@#$%^&*'
     let number = '23456789'
     let password =''
+    for(let i=0; ){
+
+    }
 
 }
