@@ -6,9 +6,11 @@ let password = ()=>{
     let specialC='!@#$%^&*'
     let number = '23456789'
     let password =''
-    let n=parseInt(Math.random()*10);
-    for(let i=0; i< n ;
-
+    let alfaN = parseInt(Math.random()*25);
+    let alfaCN = parseInt(Math.random()*25);
+    let n=parseInt(Math.random()*10 + 4);
+    for(let i=0; i< n ; i++){
+        password+=
     }
 
 }
