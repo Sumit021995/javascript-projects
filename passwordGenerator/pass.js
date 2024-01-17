@@ -12,8 +12,9 @@ let password = ()=>{
     let password =`${alfa[aN]+alfaC[aCN]+specialC[sN]+number[nN]}`
     console.log(password);
     let n=parseInt(Math.random()*10 + 4);
+    console.log(n);
     for(let i=0; i< n ; i++){
-        password+= alfa[aN]+alfaC[aCN]+specialC[sN]+number[nN]
+        password+= Math.random()
     }
     return password;
 
