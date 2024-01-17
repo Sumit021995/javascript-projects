@@ -13,8 +13,9 @@ let password = ()=>{
     console.log(password);
     let n=parseInt(Math.random()*10 + 4);
     for(let i=0; i< n ; i++){
-        password+= 
+        password+= ""
     }
+    return password;
 
 }
 
