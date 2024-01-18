@@ -6,10 +6,10 @@ let password = ()=>{
     let specialC='!@#$%^&*'
     let number = '23456789'
     let all= 'qwertyuiopasdfghjkzxcvbnmQWERTYUIPASDFGHJKLZXCVBNM!@#$%^&*23456789'
-    // let sN = parseInt(Math.random()*8);
-    // let nN = parseInt(Math.random()*8);
-    // let aN = parseInt(Math.random()*25);
-    // let aCN = parseInt(Math.random()*25);
+    let sN = parseInt(Math.random()*8);
+    let nN = parseInt(Math.random()*8);
+    let aN = parseInt(Math.random()*25);
+    let aCN = parseInt(Math.random()*25);
     let password =`${alfa[parseInt(Math.random()*8)]+alfaC[parseInt(Math.random()*25)]+specialC[parseInt(Math.random()*25)]+number[parseInt(Math.random()*8)]}`
     console.log(password);
     let n=parseInt(Math.random()*10 + 4);
