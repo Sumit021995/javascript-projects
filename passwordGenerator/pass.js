@@ -5,6 +5,7 @@ let password = ()=>{
     let alfaC = 'QWERTYUIPASDFGHJKLZXCVBNM'
     let specialC='!@#$%^&*'
     let number = '23456789'
+    let all= 'qwertyuiopasdfghjkzxcvbnmQWERTYUIPASDFGHJKLZXCVBNM!@#$%^&*23456789'
     // let sN = parseInt(Math.random()*8);
     // let nN = parseInt(Math.random()*8);
     // let aN = parseInt(Math.random()*25);
@@ -14,7 +15,8 @@ let password = ()=>{
     let n=parseInt(Math.random()*10 + 4);
     console.log(n);
     for(let i=0; i< n ; i++){
-        password+= Math.random()
+        password+= all[parseInt(Math.random()*66)]
+
     }
     return password;
 
